@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Fizzer Dubbles: a pile of fizzy sweets with bubbles -->
+  <circle cx="70" cy="120" r="38" fill="#ff7ab8"/>
+  <circle cx="130" cy="120" r="38" fill="#7ad8ff"/>
+  <circle cx="100" cy="80" r="38" fill="#c6f26b"/>
+  <circle cx="58" cy="108" r="9" fill="#fff" opacity=".6"/>
+  <circle cx="118" cy="108" r="9" fill="#fff" opacity=".6"/>
+  <circle cx="88" cy="68" r="9" fill="#fff" opacity=".6"/>
+  <circle cx="40" cy="40" r="8" fill="none" stroke="#7ad8ff" stroke-width="3"/>
+  <circle cx="160" cy="45" r="11" fill="none" stroke="#ff7ab8" stroke-width="3"/>
+  <circle cx="170" cy="85" r="6" fill="none" stroke="#c6f26b" stroke-width="3"/>
+  <circle cx="30" cy="80" r="5" fill="none" stroke="#ff7ab8" stroke-width="3"/>
+</svg>

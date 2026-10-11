@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- This is the main page of the Sweetie Sugar website.
+     HTML is like the bones of the page: it says WHAT is on the page. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweetie Sugar 🍬</title>
+  <!-- style.css is the clothes and colours of the page -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Trees with climbing leaves down each side of the page -->
+  <div class="trees trees-left"></div>
+  <div class="trees trees-right"></div>
+
+  <!-- The big sign at the top of the shop -->
+  <header>
+    <h1>🍬 Sweetie Sugar 🍭</h1>
+    <p class="tagline">The sweetest shop in the whole world!</p>
+    <button id="cart-button" class="cart-button">🛒 Basket (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main>
+    <h2>Our Sweets</h2>
+
+    <!-- The menu. script.js fills this box with sweets. -->
+    <div id="menu" class="menu"></div>
+  </main>
+
+  <!-- The shopping basket. It is hidden until you click the Basket button. -->
+  <div id="cart" class="cart hidden">
+    <div class="cart-box">
+      <button id="close-cart" class="close-button" aria-label="Close">✖</button>
+      <h2>🛒 Your Basket</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">Total: <span id="cart-total">£0.00</span></p>
+      <button id="pay-button" class="pay-button">💷 Pay (pretend!)</button>
+    </div>
+  </div>
+
+  <!-- The thank-you message after paying -->
+  <div id="thanks" class="cart hidden">
+    <div class="cart-box">
+      <h2>🎉 Thank you! 🎉</h2>
+      <p>Your pretend sweets are on their way!</p>
+      <p class="big-emoji">🍬🍭🍫</p>
+      <button id="close-thanks" class="pay-button">Back to the shop</button>
+    </div>
+  </div>
+
+  <!-- The piggy bank in the corner. It counts ALL the pretend money paid. -->
+  <div id="bank" class="bank">
+    <div class="bank-pig">🐷</div>
+    <div class="bank-label">Bank</div>
+    <div id="bank-total" class="bank-total">£0.00</div>
+  </div>
+
+  <footer>
+    <p>Made with 💖 by the Sweetie Sugar Bosses</p>
+    <p class="small">This is a pretend shop. No real money!</p>
+  </footer>
+
+  <!-- script.js makes the buttons work -->
+  <script src="script.js"></script>
+</body>
+</html>

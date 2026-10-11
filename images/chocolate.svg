@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Chocolate: a bar with a pink wrapper -->
+  <rect x="45" y="30" width="110" height="150" rx="10" fill="#6b3e26"/>
+  <g fill="#7f4b2f">
+    <rect x="55" y="40" width="40" height="30" rx="4"/><rect x="105" y="40" width="40" height="30" rx="4"/>
+    <rect x="55" y="78" width="40" height="30" rx="4"/><rect x="105" y="78" width="40" height="30" rx="4"/>
+  </g>
+  <rect x="40" y="115" width="120" height="70" rx="8" fill="#ff7ab8"/>
+  <path d="M40 115 L60 105 L80 115 L100 105 L120 115 L140 105 L160 115 Z" fill="#ff7ab8"/>
+  <text x="100" y="158" font-family="sans-serif" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle">YUM!</text>
+</svg>

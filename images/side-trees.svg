@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 400" width="100" height="400">
+  <!-- A white tree trunk with climbing leaves winding around it.
+       This picture repeats down the page like wallpaper. -->
+  <defs>
+    <!-- One pointy climbing leaf -->
+    <path id="leaf" d="M0 0 C-4 -2 -10 -2 -11 -7 C-8 -8 -6 -9 -5 -13 C-2 -11 0 -12 0 -16 C0 -12 2 -11 5 -13 C6 -9 8 -8 11 -7 C10 -2 4 -2 0 0 Z"/>
+    <!-- One small round tree leaf -->
+    <ellipse id="small-leaf" rx="6" ry="3.5"/>
+  </defs>
+
+  <!-- Branches with little yellow-green leaves -->
+  <g stroke="#e9e4da" stroke-width="4" stroke-linecap="round">
+    <line x1="60" y1="120" x2="95" y2="95"/>
+    <line x1="40" y1="300" x2="5" y2="275"/>
+  </g>
+  <g fill="#a8d672">
+    <use href="#small-leaf" x="80" y="100" transform="rotate(-30 80 100)"/>
+    <use href="#small-leaf" x="92" y="88"/>
+    <use href="#small-leaf" x="72" y="112" transform="rotate(20 72 112)"/>
+    <use href="#small-leaf" x="18" y="280" transform="rotate(30 18 280)"/>
+    <use href="#small-leaf" x="7" y="268"/>
+    <use href="#small-leaf" x="28" y="292" transform="rotate(-20 28 292)"/>
+  </g>
+
+  <!-- The white trunk -->
+  <rect x="36" y="0" width="28" height="400" fill="#f7f4ee"/>
+  <rect x="36" y="0" width="5" height="400" fill="#e3ddd1"/>
+
+  <!-- The black stripes on the trunk -->
+  <g fill="#3a3a3a">
+    <rect x="44" y="20" width="14" height="3" rx="1.5"/>
+    <rect x="38" y="65" width="10" height="3" rx="1.5"/>
+    <rect x="50" y="110" width="12" height="4" rx="2"/>
+    <rect x="40" y="160" width="16" height="3" rx="1.5"/>
+    <rect x="48" y="215" width="12" height="3" rx="1.5"/>
+    <rect x="38" y="255" width="9" height="4" rx="2"/>
+    <rect x="46" y="320" width="15" height="3" rx="1.5"/>
+    <rect x="40" y="370" width="11" height="3" rx="1.5"/>
+  </g>
+
+  <!-- The climbing vine winding around the trunk -->
+  <path d="M50 0 C20 50 20 50 50 100 C80 150 80 150 50 200 C20 250 20 250 50 300 C80 350 80 350 50 400"
+        fill="none" stroke="#3f7a3a" stroke-width="3"/>
+
+  <!-- The climbing leaves -->
+  <g fill="#2f8a3f">
+    <use href="#leaf" x="28" y="45" transform="rotate(-60 28 45)"/>
+    <use href="#leaf" x="36" y="80" transform="rotate(-100 36 80)"/>
+    <use href="#leaf" x="66" y="130" transform="rotate(60 66 130)"/>
+    <use href="#leaf" x="70" y="170" transform="rotate(110 70 170)"/>
+    <use href="#leaf" x="28" y="245" transform="rotate(-60 28 245)"/>
+    <use href="#leaf" x="36" y="280" transform="rotate(-100 36 280)"/>
+    <use href="#leaf" x="66" y="330" transform="rotate(60 66 330)"/>
+    <use href="#leaf" x="70" y="370" transform="rotate(110 70 370)"/>
+  </g>
+  <g fill="#4caf50">
+    <use href="#leaf" x="24" y="20" transform="rotate(-20 24 20)"/>
+    <use href="#leaf" x="76" y="150" transform="rotate(30 76 150)"/>
+    <use href="#leaf" x="24" y="220" transform="rotate(-20 24 220)"/>
+    <use href="#leaf" x="76" y="350" transform="rotate(30 76 350)"/>
+  </g>
+</svg>

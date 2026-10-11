@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Jelly Babies: three smiley jelly sweets -->
+  <g id="baby">
+    <ellipse cx="0" cy="-30" rx="16" ry="16"/>
+    <ellipse cx="0" cy="10" rx="20" ry="30"/>
+    <ellipse cx="-20" cy="0" rx="7" ry="14"/>
+    <ellipse cx="20" cy="0" rx="7" ry="14"/>
+  </g>
+  <use href="#baby" x="50" y="110" fill="#ff4f6d"/>
+  <use href="#baby" x="100" y="100" fill="#ffd23f"/>
+  <use href="#baby" x="150" y="110" fill="#7bd389"/>
+  <g fill="#333">
+    <circle cx="45" cy="78" r="2.5"/><circle cx="55" cy="78" r="2.5"/>
+    <circle cx="95" cy="68" r="2.5"/><circle cx="105" cy="68" r="2.5"/>
+    <circle cx="145" cy="78" r="2.5"/><circle cx="155" cy="78" r="2.5"/>
+  </g>
+  <g fill="none" stroke="#333" stroke-width="2" stroke-linecap="round">
+    <path d="M45 85 Q50 89 55 85"/><path d="M95 75 Q100 79 105 75"/><path d="M145 85 Q150 89 155 85"/>
+  </g>
+</svg>

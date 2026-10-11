@@ -1,0 +1,298 @@
+/* style.css is like the clothes and colours of the page.
+   Try changing a colour and see what happens! */
+
+/* The whole page */
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", "Chalkboard SE", "Trebuchet MS", sans-serif;
+  background: #fff0f7;   /* very light pink */
+  color: #5a2a4a;        /* dark berry colour for words */
+  text-align: center;
+}
+
+/* The trees down the sides of the page.
+   They stay still while the sweets scroll past. */
+.trees {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 1;
+  background-image: url("images/side-trees.svg");
+  background-repeat: repeat-y;
+  pointer-events: none;  /* clicks go straight through the trees */
+}
+
+.trees-left {
+  left: 0;
+}
+
+.trees-right {
+  right: 0;
+  transform: scaleX(-1); /* flip it, like looking in a mirror */
+}
+
+/* Leave room for the trees so they don't cover the sweets */
+main, footer {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* On small screens (like phones), hide the trees to make space */
+@media (max-width: 600px) {
+  .trees {
+    display: none;
+  }
+  main, footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* The big sign at the top */
+header {
+  background: linear-gradient(135deg, #ff7ab8, #b28dff);
+  color: white;
+  padding: 60px 16px 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.tagline {
+  font-size: 1.3em;
+  margin: 8px 0 16px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #ff4f9a;
+}
+
+/* All the round, bouncy buttons */
+button {
+  font-family: inherit;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+/* The basket button floats in the top corner, so you can always see it */
+.cart-button {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+  background: white;
+  color: #ff4f9a;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(90, 42, 74, 0.3);
+}
+
+/* The flying sweet picture when you add to the basket */
+.flyer {
+  position: fixed;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* The basket does a happy jump when a sweet lands in it */
+.bounce {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.3) rotate(-8deg); }
+  60%  { transform: scale(0.9) rotate(6deg); }
+  100% { transform: scale(1); }
+}
+
+/* The menu: sweets sit in a grid of cards */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 16px;
+}
+
+/* One sweet card */
+.sweet {
+  background: white;
+  border: 4px dashed #ffb3d6;
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.sweet img {
+  width: 140px;
+  height: 140px;
+}
+
+.sweet h3 {
+  margin: 8px 0 4px;
+  font-size: 1.3em;
+}
+
+.price {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #ff4f9a;
+  margin: 4px 0 12px;
+}
+
+.add-button {
+  background: #ff7ab8;
+  color: white;
+}
+
+/* The heart "like" button */
+.like-button {
+  display: block;
+  margin: 10px auto 0;
+  background: #ffe0ef;
+  color: #ff4f9a;
+  font-weight: bold;
+}
+
+/* The heart pops when you tap it */
+.pop {
+  animation: pop 0.4s;
+}
+
+@keyframes pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+/* The piggy bank in the bottom right corner */
+.bank {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  z-index: 25; /* on top of everything, so you can watch the coins go in */
+  background: #fff8c4;
+  border: 4px solid #ffd23f;
+  border-radius: 20px;
+  padding: 8px 14px;
+  box-shadow: 0 4px 12px rgba(90, 42, 74, 0.3);
+}
+
+.bank-pig {
+  font-size: 2em;
+}
+
+.bank-label {
+  font-size: 0.9em;
+}
+
+.bank-total {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #2f8a3f;
+}
+
+/* A shiny coin that drops into the bank */
+.coin {
+  position: fixed;
+  z-index: 26;
+  font-size: 2em;
+  pointer-events: none;
+}
+
+/* The shopping basket pop-up */
+.cart {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: rgba(90, 42, 74, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* "hidden" makes something disappear */
+.hidden {
+  display: none;
+}
+
+.cart-box {
+  position: relative;
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffe0ef;
+  color: #ff4f9a;
+  padding: 6px 12px;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 2px dotted #ffb3d6;
+}
+
+.remove-button {
+  background: #ffe0ef;
+  color: #ff4f9a;
+  padding: 4px 10px;
+  font-size: 0.9em;
+}
+
+.total {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.pay-button {
+  background: #7bd389;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.big-emoji {
+  font-size: 3em;
+}
+
+footer {
+  background: #ffe0ef;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.small {
+  font-size: 0.85em;
+}

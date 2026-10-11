@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Chocolate Pretzel: a pretzel knot covered in chocolate and sprinkles -->
+  <path d="M100 150 C40 150 25 60 70 50 C105 42 110 95 100 110 C90 95 95 42 130 50 C175 60 160 150 100 150 Z"
+        fill="none" stroke="#5a3220" stroke-width="22" stroke-linejoin="round"/>
+  <path d="M55 120 L130 75 M145 120 L70 75" stroke="#5a3220" stroke-width="22" stroke-linecap="round"/>
+  <rect x="60" y="60" width="8" height="4" fill="#ff7ab8" transform="rotate(30 64 62)"/>
+  <rect x="135" y="62" width="8" height="4" fill="#7ad8ff" transform="rotate(-20 139 64)"/>
+  <rect x="98" y="140" width="8" height="4" fill="#ffd23f"/>
+  <rect x="50" y="125" width="8" height="4" fill="#c6f26b" transform="rotate(60 54 127)"/>
+  <rect x="145" y="125" width="8" height="4" fill="#ff7ab8" transform="rotate(-50 149 127)"/>
+</svg>

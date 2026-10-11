@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Chocolate Liquorice: twisty liquorice sticks dipped in chocolate -->
+  <g transform="rotate(-20 100 100)">
+    <rect x="50" y="30" width="26" height="140" rx="13" fill="#2b2b2b"/>
+    <rect x="50" y="110" width="26" height="60" rx="13" fill="#7b4a2a"/>
+    <path d="M50 50 L76 62 M50 70 L76 82 M50 90 L76 102" stroke="#555" stroke-width="5"/>
+  </g>
+  <g transform="rotate(15 100 100)">
+    <rect x="115" y="30" width="26" height="140" rx="13" fill="#2b2b2b"/>
+    <rect x="115" y="110" width="26" height="60" rx="13" fill="#7b4a2a"/>
+    <path d="M115 50 L141 62 M115 70 L141 82 M115 90 L141 102" stroke="#555" stroke-width="5"/>
+  </g>
+</svg>

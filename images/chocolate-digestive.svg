@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Chocolate Digestive: a round biscuit with chocolate on top -->
+  <circle cx="100" cy="108" r="72" fill="#d9a35b"/>
+  <circle cx="100" cy="100" r="72" fill="#e8b96f"/>
+  <path d="M28 100 A72 72 0 0 1 172 100 Q150 115 130 100 Q110 120 90 100 Q70 118 50 100 Q38 110 28 100 Z" fill="#6b3e26"/>
+  <circle cx="70" cy="135" r="4" fill="#b98447"/>
+  <circle cx="100" cy="150" r="4" fill="#b98447"/>
+  <circle cx="130" cy="135" r="4" fill="#b98447"/>
+  <circle cx="85" cy="125" r="4" fill="#b98447"/>
+  <circle cx="118" cy="122" r="4" fill="#b98447"/>
+</svg>
